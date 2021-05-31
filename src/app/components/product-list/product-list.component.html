@@ -1,0 +1,47 @@
+<nav class="container navbar navbar-dark bg-secondary">
+    <div class="container">
+        <a class="navbar-brand" routerLink = "/">Products List 
+            <img src="../../../assets/img/list.png" 
+                class="img" width="45" alt="Clipboards">
+        </a>
+        <a class="navbar-brand" routerLink = "/cart">Cart List 
+            <img src="../../../assets/img/basket.png" 
+                class="img" width="55" alt="Shopping cart">
+        </a>
+    </div>
+</nav>
+
+<div class="container">
+    <strong><hr/></strong>
+</div>
+
+
+<div class="container">
+    <table class="table table-bordered table-hover">
+        <thead class="table-active">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">NAME</th>
+                <th scope="col">LABEL</th>
+                <th scope="col">PRICE</th>
+                <th scope="col">CART</th>
+            </tr>
+        </thead>
+        <tbody *ngFor = "let product of products; let idx = index">
+            <tr>
+                <th scope="row">{{idx + 1}}</th>
+                <td class="name">{{product.name}}</td>
+                <td class="text">{{product.label}}</td>
+                <td class="price-all">{{product.price}}</td>
+                <td class="basket"><button class="btn btn-success" 
+                                    (click) = "addToCart(product.id)">Add to Cart 
+                                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <strong><hr/></strong>
+</div>

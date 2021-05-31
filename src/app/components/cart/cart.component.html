@@ -1,0 +1,37 @@
+
+<div class="container">
+    <div class = "cart">
+        <a class="navbar-brand" routerLink = "/">
+            <img src="../../../assets/img/ArrowLeft.png" 
+            class="img" width="30" alt="Clipboards">
+            ComeBack To Products List    
+        </a>
+        <h2>Your Cart:</h2>
+    </div>
+    <table class="table table-bordered table-hover">
+        <tbody *ngFor = "let item of cartItem; let idx = index"> 
+            <tr>
+                <th scope="row">{{idx + 1}}</th>
+                <td class="name">{{item.name}}</td>
+                <td class="text">{{item.label}}</td>
+                <td class="price-all">{{item.price}}</td>
+                <td class="basket"><button class="btn btn-outline-danger" 
+                                        (click) = "removeItemFromCart(idx)"> Remove
+                                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table> 
+    <div class="total">
+        <div>
+            <h2>Total:</h2>
+        </div>
+        <div>
+            <h2>{{ sharedService.total | currency:'USD'}}</h2>
+        </div>
+        <div>
+            <button class="btn btn-outline-secondary btn-lg"  
+                    (click) = "emptyCart()"> Clear all Cart</button>
+        </div>
+    </div>
+</div>

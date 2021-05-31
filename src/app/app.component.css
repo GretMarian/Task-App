@@ -1,0 +1,15 @@
+.navbar {
+    margin-top: 30px;
+    height: 80px;
+    background-color: #ECECEC;
+}
+
+.navbar-brand {
+   font-size: 25px;
+   padding: 10px;
+}
+
+.navbar-brand:hover {
+    font-size: 30px;
+    color: chocolate;
+ }

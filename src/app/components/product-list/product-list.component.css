@@ -1,0 +1,39 @@
+.container {
+    padding: 0;
+}
+
+.navbar {
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.img {
+    margin: 5px 20px 10px 10px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.name {
+    width: 120px;
+}
+
+.text {
+    width: 700px;
+}
+
+.basket {
+    width: 200px;
+}
+
+.price-all {
+    width: 130px;
+    text-align: center;
+}
+
+.btn {
+    width: 170px;
+    padding: 5px;
+}

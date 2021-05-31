@@ -1,0 +1,46 @@
+.container {
+  margin-top: 50px;
+  padding: 10px;
+  box-shadow: 0 0 5px 2px;	
+}
+
+.cart {
+  background: #e8e8e8;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.name {
+  width: 120px;
+}
+
+.text {
+  width: 700px;
+}
+
+.basket {
+  width: 120px;
+}
+
+.price-all {
+  width: 100px;
+  text-align: center;
+}
+
+.btn {
+  width: 100px;
+  padding: 5px;
+}
+
+.btn-lg {
+  width: 170px;
+  padding: 5px;
+}
